@@ -1,0 +1,25 @@
+{
+  "name": "MVC-Architecture-Node-js",
+  "version": "1.0.0",
+  "description": "mvc-practice-application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahsan2001/MVC-Architecture-Node-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahsan2001/MVC-Architecture-Node-js/issues"
+  },
+  "homepage": "https://github.com/Ahsan2001/MVC-Architecture-Node-js#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

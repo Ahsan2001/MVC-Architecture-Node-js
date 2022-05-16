@@ -30,6 +30,5 @@ const register = new mongoose.Schema({
 })
 
 
-const Register = mongoose.model("USER", register)
-
+const Register = mongoose.model("registerLogokaData", register)
 module.exports = Register

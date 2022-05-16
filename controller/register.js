@@ -9,7 +9,7 @@ const signup = async (req, res) => {
         res.send({ message: "please Put All the Fields" })
     }
     const passHashKarhaHoon = await bcrypt.hash(password, 10)
-    const userObj2 = {
+    const userObj = {
         ...req.body,
         password: passHashKarhaHoon,
 
@@ -21,7 +21,7 @@ const signup = async (req, res) => {
         else if (user) {
             res.send({ message: "email is already registered" })
         } else {
-            Register.create(userObj2, (err, _) => {
+            Register.create(userObj, (err, _) => {
                 if (err) {
                     res.send(err)
                 }

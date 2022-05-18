@@ -1,7 +1,9 @@
 const express = require("express");
+const router = express.Router();
+
+
 const signup = require("../controller/register");
 const login = require("../controller/login");
-const router = express.Router();
 
 
 router.post("/api/v1/signup", signup)

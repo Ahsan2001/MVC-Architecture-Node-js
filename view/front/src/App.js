@@ -1,13 +1,12 @@
-import './bootstrap.min.css';
-import Signup from './screen/signup';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
+import Routing from './routes/routing';
 
 const App = () => {
   return (
-    <div>
-      <Signup />
-    </div>
+    <>
+      <Routing />
+    </>
   )
 }
 

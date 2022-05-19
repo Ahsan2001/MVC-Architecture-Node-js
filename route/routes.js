@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const {createTodo, getTodo,  upateTodo, deleteTodo,} = require("../controller/todoController");
-
+const createTodo = require("../controller/createTodoController");
+const getTodo    = require("../controller/getTodoController");
+const upateTodo  = require("../controller/updateTodoController");
+const deleteTodo = require("../controller/deleteTodoController");
 
 router.post("/api/todo", createTodo);
 router.get("/api/todo", getTodo);

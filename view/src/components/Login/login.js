@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Loader from "../../components/Loader/loader";
+import Loader from "../Loader/loader";
 import styles from './login.module.css'
 const Login = () => {
 

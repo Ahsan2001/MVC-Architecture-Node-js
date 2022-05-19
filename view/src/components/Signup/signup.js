@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Loader from "../../components/Loader/loader";
+
 import styles from './signup.module.css'
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/loader";
 
 
 const Signup = () => {

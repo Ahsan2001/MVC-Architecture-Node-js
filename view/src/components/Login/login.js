@@ -21,8 +21,14 @@ const Login = () => {
                 console.log(res)
                 alert("Success Login")
             })
-            .catch((err) => { console.log(err) });
-
+            .catch((err) => { 
+                console.log(err)
+                setLoading(false)
+                alert("Invalid Credential !")
+            });
+        
+        setEmail("");
+        setPassword("");
     }
 
     return (
@@ -35,7 +41,7 @@ const Login = () => {
                         <form>
                             <input className="form-control my-2" type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Enter email" />
                             <input className="form-control my-2" type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder="password" />
-                                {loading ? <Loader /> : <button className={`btn btn-primary ${styles.btn_main}`}   onClick={loginUser}>Login</button>}
+                            {loading ? <Loader /> : <button className={`btn btn-primary ${styles.btn_main}`}   onClick={loginUser}>Login</button>}
                         </form>
                     </div>
                 </div>
